@@ -1,0 +1,34 @@
+html {
+   #nav{position:absolute;top:100%;left:0;right:0;z-index:60;display:none;flex-direction:column;gap:2px;padding:10px clamp(18px,4vw,32px) 16px;max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);overflow-y:auto;background:var(--sf);border-bottom:1px solid var(--line);box-shadow:var(--sh)}
+ .open #nav{display:flex}
+ #nav a{display:block;padding:14px 14px;font-size:16px;min-height:48px}
+  @media (max-width: 900px) {
+  #nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px clamp(18px, 4vw, 32px) 16px;
+    background: var(--sf);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--sh);
+  }
+  .open #nav {
+    display: flex;
+  }
+}
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .chans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 12px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
